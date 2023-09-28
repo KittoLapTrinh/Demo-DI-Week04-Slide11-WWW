@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="cl1" class="vn.edu.iuh.fit.models.Class_">
+        <property name="classId" value="DHKTPM16A"/>
+        <property name="className" value="Dai hoc ky thuat phan mem 16A"/>
+    </bean>
+    <bean id="cl2" class="vn.edu.iuh.fit.models.Class_">
+        <property name="classId" value="DHVTR17B"/>
+        <property name="className" value="Dai hoc Cong Nghe May 17B"/>
+    </bean>
+    <bean id="cl3" class="vn.edu.iuh.fit.models.Class_">
+        <property name="classId" value="DHKT18C"/>
+        <property name="className" value="Dai hoc Ke Toan 18C"/>
+    </bean>
+
+
+
+    <bean id="st1" class="vn.edu.iuh.fit.models.Student">
+        <property name="id" value="1"/>
+        <property name="name" value="Duong Tuan Kiet"/>
+        <property name="lophoc" ref="cl1"/>
+    </bean>
+    <bean id="st2" class="vn.edu.iuh.fit.models.Student">
+        <property name="id" value="2"/>
+        <property name="name" value="Huynh Le Tam Nhu"/>
+        <property name="lophoc" ref="cl2"/>
+    </bean>
+    <bean id="st3" class="vn.edu.iuh.fit.models.Student">
+        <property name="id" value="3"/>
+        <property name="name" value="Vu Phuong Nhi"/>
+        <property name="lophoc" ref="cl3"/>
+    </bean>
+</beans>
